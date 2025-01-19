@@ -1,0 +1,123 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e9620f8c34305754d8cc9a7e49e852d9, type: 3}
+  m_Name: Main_loc_en
+  m_EditorClassIdentifier: 
+  m_LocaleId:
+    m_Code: en
+  m_SharedData: {fileID: 11400000, guid: 26d8c8e3a5b85bc43abd155c110bdc06, type: 2}
+  m_Metadata:
+    m_Items: []
+  m_TableData:
+  - m_Id: 871511019520
+    m_Localized: start
+    m_Metadata:
+      m_Items: []
+  - m_Id: 3344741093376
+    m_Localized: settings
+    m_Metadata:
+      m_Items: []
+  - m_Id: 3484889567232
+    m_Localized: control
+    m_Metadata:
+      m_Items: []
+  - m_Id: 3707112181760
+    m_Localized: exit
+    m_Metadata:
+      m_Items: []
+  - m_Id: 4218917933056
+    m_Localized: confirm
+    m_Metadata:
+      m_Items: []
+  - m_Id: 5939371102208
+    m_Localized: sunrise
+    m_Metadata:
+      m_Items: []
+  - m_Id: 6595574157312
+    m_Localized: bright
+    m_Metadata:
+      m_Items: []
+  - m_Id: 6657272369152
+    m_Localized: murky
+    m_Metadata:
+      m_Items: []
+  - m_Id: 6767679033344
+    m_Localized: dawn
+    m_Metadata:
+      m_Items: []
+  - m_Id: 6880212209664
+    m_Localized: twilight
+    m_Metadata:
+      m_Items: []
+  - m_Id: 7163596165120
+    m_Localized: grim
+    m_Metadata:
+      m_Items: []
+  - m_Id: 7557130932224
+    m_Localized: cloudy
+    m_Metadata:
+      m_Items: []
+  - m_Id: 7677717172224
+    m_Localized: clear
+    m_Metadata:
+      m_Items: []
+  - m_Id: 7751511756800
+    m_Localized: sunset
+    m_Metadata:
+      m_Items: []
+  - m_Id: 7787775709184
+    m_Localized: night
+    m_Metadata:
+      m_Items: []
+  - m_Id: 4426523398144
+    m_Localized: 'select
+
+      the sky condition'
+    m_Metadata:
+      m_Items: []
+  - m_Id: 9875863818240
+    m_Localized: finish
+    m_Metadata:
+      m_Items: []
+  - m_Id: 10275186724864
+    m_Localized: 'playing now:'
+    m_Metadata:
+      m_Items: []
+  - m_Id: 10325392543744
+    m_Localized: volume
+    m_Metadata:
+      m_Items: []
+  - m_Id: 10539801169920
+    m_Localized: 'choose
+
+      a starting point'
+    m_Metadata:
+      m_Items: []
+  - m_Id: 11061555810304
+    m_Localized: to menu
+    m_Metadata:
+      m_Items: []
+  - m_Id: 11030786396160
+    m_Localized: music
+    m_Metadata:
+      m_Items: []
+  - m_Id: 10991838089216
+    m_Localized: place
+    m_Metadata:
+      m_Items: []
+  - m_Id: 10828469948416
+    m_Localized: sky
+    m_Metadata:
+      m_Items: []
+  references:
+    version: 2
+    RefIds: []

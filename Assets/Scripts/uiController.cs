@@ -1,6 +1,8 @@
 using System;
 using TMPro;
 using UnityEngine;
+using UnityEngine.Localization;
+using UnityEngine.Localization.Settings;
 using UnityEngine.SceneManagement;
 using UnityEngine.UI;
 
@@ -22,6 +24,13 @@ public class uiController : MonoBehaviour
 
     private GameObject[] panels;
 
+    public void ChangeLang(int index)
+    {
+        LocalizationSettings.SelectedLocale = LocalizationSettings.AvailableLocales.Locales[index];
+    }
+    
+    
+    
     private void Awake()
     {
         panels = new GameObject[] { placePanel, musicPanel, skyPanel, mainPanel, instrPanel, settingsPanel};
@@ -34,8 +43,6 @@ public class uiController : MonoBehaviour
             panel.SetActive(panel==curr);
         }
     }
-    
-    
 
     public void ChangeNumber(int num)
     {
