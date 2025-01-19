@@ -2,6 +2,7 @@ using System;
 using TMPro;
 using UnityEngine;
 using UnityEngine.SceneManagement;
+using UnityEngine.UI;
 
 public class uiController : MonoBehaviour
 {
@@ -16,15 +17,17 @@ public class uiController : MonoBehaviour
     [SerializeField] private GameObject skyPanel;
     [SerializeField] private GameObject mainPanel;
     [SerializeField] private GameObject instrPanel;
+    [SerializeField] private GameObject settingsPanel;
+    [SerializeField] private Slider slider;
 
     private GameObject[] panels;
 
     private void Awake()
     {
-        panels = new GameObject[] { placePanel, musicPanel, skyPanel, mainPanel, instrPanel};
+        panels = new GameObject[] { placePanel, musicPanel, skyPanel, mainPanel, instrPanel, settingsPanel};
     }
 
-    public void SettingsChange(GameObject curr)
+    public void PanelsChange(GameObject curr)
     {
         foreach (GameObject panel in panels)
         {
@@ -56,7 +59,9 @@ public class uiController : MonoBehaviour
         PlayerPrefs.SetInt("SkyNum", _skyNumber);
         PlayerPrefs.SetString("Music", currMusic.text);
         PlayerPrefs.SetInt("PlaceNum", _placeNumber);
+        PlayerPrefs.SetFloat("Volume", slider.value);
         SceneManager.LoadScene(1);
     }
+    
 
 }

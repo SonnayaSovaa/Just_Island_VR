@@ -2,15 +2,17 @@ using UnityEngine;
 
 public class ButtonBehavior : MonoBehaviour
 {
-    // Start is called once before the first execution of Update after the MonoBehaviour is created
-    void Start()
+    private Vector3 _startScale;
+    [SerializeField] private float scaleFactor;
+
+    public void OnHover(Transform obj)
     {
-        
+        _startScale = obj.localScale;
+        obj.localScale *= scaleFactor;
     }
 
-    // Update is called once per frame
-    void Update()
+    public void ExitHover(Transform obj)
     {
-        
+        obj.localScale = _startScale;
     }
 }
