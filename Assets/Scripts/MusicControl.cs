@@ -1,6 +1,7 @@
 using System.Collections.Generic;
 using TMPro;
 using UnityEngine;
+using UnityEngine.UI;
 
 public class MusicControl : MonoBehaviour
 {
@@ -18,6 +19,7 @@ public class MusicControl : MonoBehaviour
         for (int i = 0; i < texts.Length; i++)
         {
             _musicDict.Add(texts[i].text, clips[i]);
+            texts[i].text = clips[i].name;
         }
     }
 
