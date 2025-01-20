@@ -19,17 +19,20 @@ public class MusicControl : MonoBehaviour
         _musicDict = new Dictionary<string, AudioClip>();
         for (int i = 0; i < texts.Length; i++)
         {
-            _musicDict.Add(texts[i].text, clips[i]);
             texts[i].text = clips[i].name;
+            _musicDict.Add(texts[i].text, clips[i]);
         }
-
+        
         if (PlayerPrefs.HasKey("Music"))
         {
             currMusic.text = PlayerPrefs.GetString("Music");
-            ChangeMusic(currMusic);
+            if (PlayerPrefs.GetString("Music") == "---") audioSource.Stop();
+            else ChangeMusic(currMusic); 
+
             slider.value = PlayerPrefs.GetFloat("Volume");
         }
     }
+
 
     public void ChangeMusic(TMP_Text clipName)
     {

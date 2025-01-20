@@ -118,6 +118,10 @@ MonoBehaviour:
     m_Localized: sky
     m_Metadata:
       m_Items: []
+  - m_Id: 356891169050624
+    m_Localized: nothing
+    m_Metadata:
+      m_Items: []
   references:
     version: 2
     RefIds: []
