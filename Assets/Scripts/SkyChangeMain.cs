@@ -3,19 +3,25 @@ using UnityEngine;
 public class SkyChangeMain : MonoBehaviour
 {
     
-    private int _skyNumber;
+    public int skyNumber=0;
     [SerializeField] private Material[] skyMaterials;
+    [SerializeField] private float skyRotation = 0.4f;
 
     private void Awake()
     {
-        _skyNumber = PlayerPrefs.GetInt("SkyNum");
-        ChangeNumber(_skyNumber);
+        if (PlayerPrefs.HasKey("SkyNum")) skyNumber = PlayerPrefs.GetInt("SkyNum");
+        ChangeNumber(skyNumber);
     }
 
-    private void ChangeNumber(int num)
+    public void ChangeNumber(int num)
     {
-        _skyNumber = num;
+        skyNumber = num;
         RenderSettings.skybox = skyMaterials[num];
         DynamicGI.UpdateEnvironment();
+    }
+    
+    void Update ()
+    {
+        RenderSettings.skybox.SetFloat("_Rotation", Time.time*skyRotation);
     }
 }

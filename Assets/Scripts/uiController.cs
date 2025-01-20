@@ -8,11 +8,8 @@ using UnityEngine.UI;
 
 public class uiController : MonoBehaviour
 {
-    private int _skyNumber = 0;
     private int _placeNumber = 0;
     
-    [SerializeField] private Material[] skyMaterials;
-
     [SerializeField] private TMP_Text currMusic;
     [SerializeField] private GameObject placePanel;
     [SerializeField] private GameObject musicPanel;
@@ -23,13 +20,12 @@ public class uiController : MonoBehaviour
     [SerializeField] private Slider slider;
 
     private GameObject[] panels;
+    [SerializeField] private SkyChangeMain skCh;
 
     public void ChangeLang(int index)
     {
         LocalizationSettings.SelectedLocale = LocalizationSettings.AvailableLocales.Locales[index];
     }
-    
-    
     
     private void Awake()
     {
@@ -43,13 +39,7 @@ public class uiController : MonoBehaviour
             panel.SetActive(panel==curr);
         }
     }
-
-    public void ChangeNumber(int num)
-    {
-        _skyNumber = num;
-        RenderSettings.skybox = skyMaterials[num];
-        DynamicGI.UpdateEnvironment();
-    }
+    
 
     public void ChangePlace(int num)
     {
@@ -63,12 +53,11 @@ public class uiController : MonoBehaviour
 
     public void ToMain()
     {
-        PlayerPrefs.SetInt("SkyNum", _skyNumber);
+        PlayerPrefs.SetInt("SkyNum", skCh.skyNumber);
         PlayerPrefs.SetString("Music", currMusic.text);
         PlayerPrefs.SetInt("PlaceNum", _placeNumber);
         PlayerPrefs.SetFloat("Volume", slider.value);
         SceneManager.LoadScene(1);
     }
     
-
 }
