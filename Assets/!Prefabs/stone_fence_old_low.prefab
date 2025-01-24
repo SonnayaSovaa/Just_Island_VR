@@ -60,6 +60,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: stone_fence_old_low
       objectReference: {fileID: 0}
+    - target: {fileID: 1923944093234327658, guid: e6438366f9309834baf76c78a078c765, type: 3}
+      propertyPath: 'm_Materials.Array.data[0]'
+      value: 
+      objectReference: {fileID: 2100000, guid: f73d5b482c18f1a408474f6740ef02b3, type: 2}
     - target: {fileID: 2774179452914061681, guid: e6438366f9309834baf76c78a078c765, type: 3}
       propertyPath: 'm_Materials.Array.data[0]'
       value: 

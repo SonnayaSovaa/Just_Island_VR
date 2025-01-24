@@ -8,6 +8,10 @@ public class FireControl : MonoBehaviour
     [SerializeField] private Light fire;
     [SerializeField] private float freq;
 
+    [SerializeField] private float min;
+    [SerializeField] private float max;
+
+
     private void OnEnable()
     {
         StartCoroutine(Fire());
@@ -17,7 +21,7 @@ public class FireControl : MonoBehaviour
     {
         while (freq != 0)
         {
-            fire.intensity = Random.Range(10, 30);
+            fire.intensity = Random.Range(min, max);
             yield return new WaitForSeconds(freq);
         }
 
