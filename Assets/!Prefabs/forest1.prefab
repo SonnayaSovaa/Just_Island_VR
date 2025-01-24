@@ -1,6 +1,6 @@
 %YAML 1.1
 %TAG !u! tag:unity3d.com,2011:
---- !u!1001 &698927332371889106
+--- !u!1001 &6137458281579045288
 PrefabInstance:
   m_ObjectHideFlags: 0
   serializedVersion: 2
@@ -14,15 +14,15 @@ PrefabInstance:
       objectReference: {fileID: 2100000, guid: 8e18bf51cbbe1f44ab89cb84224908d2, type: 2}
     - target: {fileID: -8679921383154817045, guid: f6044c09e00174c428058673f7e6c348, type: 3}
       propertyPath: m_LocalPosition.x
-      value: -643.601
+      value: 175.74902
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: f6044c09e00174c428058673f7e6c348, type: 3}
       propertyPath: m_LocalPosition.y
-      value: 492.12555
+      value: 34.20124
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: f6044c09e00174c428058673f7e6c348, type: 3}
       propertyPath: m_LocalPosition.z
-      value: 164.32191
+      value: 44.472763
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: f6044c09e00174c428058673f7e6c348, type: 3}
       propertyPath: m_LocalRotation.w
@@ -76,10 +76,18 @@ PrefabInstance:
       propertyPath: m_Name
       value: forest1
       objectReference: {fileID: 0}
+    - target: {fileID: 1415832088092921694, guid: f6044c09e00174c428058673f7e6c348, type: 3}
+      propertyPath: 'm_Materials.Array.data[0]'
+      value: 
+      objectReference: {fileID: 2100000, guid: 38efefb0399a10743a233cb9e5863254, type: 2}
     - target: {fileID: 1907012472582949997, guid: f6044c09e00174c428058673f7e6c348, type: 3}
       propertyPath: 'm_Materials.Array.data[0]'
       value: 
       objectReference: {fileID: 2100000, guid: 8e18bf51cbbe1f44ab89cb84224908d2, type: 2}
+    - target: {fileID: 2611422072114395280, guid: f6044c09e00174c428058673f7e6c348, type: 3}
+      propertyPath: 'm_Materials.Array.data[0]'
+      value: 
+      objectReference: {fileID: 2100000, guid: 38efefb0399a10743a233cb9e5863254, type: 2}
     - target: {fileID: 3294704377593360830, guid: f6044c09e00174c428058673f7e6c348, type: 3}
       propertyPath: 'm_Materials.Array.data[0]'
       value: 
@@ -88,6 +96,14 @@ PrefabInstance:
       propertyPath: 'm_Materials.Array.data[0]'
       value: 
       objectReference: {fileID: 2100000, guid: 72911170a33e5ac4688e2fae2373876a, type: 2}
+    - target: {fileID: 6049344195451356983, guid: f6044c09e00174c428058673f7e6c348, type: 3}
+      propertyPath: 'm_Materials.Array.data[0]'
+      value: 
+      objectReference: {fileID: 2100000, guid: 38efefb0399a10743a233cb9e5863254, type: 2}
+    - target: {fileID: 8583445615898695176, guid: f6044c09e00174c428058673f7e6c348, type: 3}
+      propertyPath: 'm_Materials.Array.data[0]'
+      value: 
+      objectReference: {fileID: 2100000, guid: 38efefb0399a10743a233cb9e5863254, type: 2}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
