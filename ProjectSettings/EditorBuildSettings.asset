@@ -15,5 +15,6 @@ EditorBuildSettings:
     com.unity.addressableassets: {fileID: 11400000, guid: d27b6e5c32f4a3040b0784a68b74de4e, type: 2}
     com.unity.input.settings.actions: {fileID: -944628639613478452, guid: 052faaac586de48259a63d0c4782560b, type: 3}
     com.unity.localization.settings: {fileID: 11400000, guid: 7ab6efc3ab528c74e88694c35b96f7a1, type: 2}
+    com.unity.xr.management.loader_settings: {fileID: 11400000, guid: 93085c7993051c94d83b95192b7f19cc, type: 2}
     com.unity.xr.openxr.settings4: {fileID: 11400000, guid: 076e9d63f31b6fc469e6b6ab5cb2aa29, type: 2}
   m_UseUCBPForAssetBundles: 0
