@@ -32,7 +32,7 @@ public class SkyChangeMain : MonoBehaviour
         if (SceneManager.GetActiveScene().buildIndex == 1)
         {
             RenderSettings.ambientIntensity = intens[num];
-            _night = (num == 1 || num == 2 || num == 3 || num == 4 || num == 7);
+            _night = (num == 1 || num == 2 || num == 3 || num == 4 || num == 7 || num==9);
             foreach (GameObject n in nightObjects)
             {
                 n.SetActive(_night);

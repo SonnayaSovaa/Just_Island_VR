@@ -1,5 +1,6 @@
 using System;
 using UnityEngine;
+using UnityEngine.UI;
 
 public class Movement : MonoBehaviour
 {
@@ -10,11 +11,20 @@ public class Movement : MonoBehaviour
     public float moveSpeed;
     public float rotSpeed;
     private Capsule_COntrol _control;
+    private bool _paused = false;
+    [SerializeField] GameObject pauseCanvas;
 
     private void Awake()
     {
         _control = new Capsule_COntrol();
     }
+
+    public void Speed(Slider sl)
+    {
+        moveSpeed = sl.value;
+    }
+    
+    
  
     private void FixedUpdate()
     {
@@ -41,6 +51,13 @@ public class Movement : MonoBehaviour
     private void OnEnable()
     {
         _control.Enable();
+        _control.Capsule_Controller.PauseActivate.started+= ctx => Pause();
+
+    }
+    void Pause()
+    {
+        _paused = !_paused;
+        pauseCanvas.SetActive(_paused);
     }
     
     private void OnDisable()

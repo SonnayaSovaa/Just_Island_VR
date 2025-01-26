@@ -22,15 +22,13 @@ public class MusicControl : MonoBehaviour
             texts[i].text = clips[i].name;
             _musicDict.Add(texts[i].text, clips[i]);
         }
-        
-        if (PlayerPrefs.HasKey("Music"))
-        {
-            currMusic.text = PlayerPrefs.GetString("Music");
-            if (PlayerPrefs.GetString("Music") == "---") audioSource.Stop();
-            else ChangeMusic(currMusic); 
 
-            slider.value = PlayerPrefs.GetFloat("Volume");
-        }
+        currMusic.text = PlayerPrefs.GetString("Music");
+        if (PlayerPrefs.GetString("Music") == "---") audioSource.Stop();
+        else ChangeMusic(currMusic);
+
+        slider.value = PlayerPrefs.GetFloat("Volume");
+
     }
 
 

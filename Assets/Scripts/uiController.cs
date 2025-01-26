@@ -59,5 +59,14 @@ public class uiController : MonoBehaviour
         PlayerPrefs.SetFloat("Volume", slider.value);
         SceneManager.LoadScene(1);
     }
+
+    public void ToMenu()
+    {
+        PlayerPrefs.SetInt("SkyNum", skCh.skyNumber);
+        PlayerPrefs.SetString("Music", currMusic.text);
+        PlayerPrefs.SetInt("PlaceNum", _placeNumber);
+        PlayerPrefs.SetFloat("Volume", slider.value);
+        SceneManager.LoadScene(0);
+    }
     
 }
