@@ -147,6 +147,10 @@ MonoBehaviour:
     m_Key: Skelet
     m_Metadata:
       m_Items: []
+  - m_Id: 3253596273168384
+    m_Key: speed
+    m_Metadata:
+      m_Items: []
   m_Metadata:
     m_Items: []
   m_KeyGenerator:
