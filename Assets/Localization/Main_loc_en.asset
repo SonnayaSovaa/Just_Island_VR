@@ -122,6 +122,38 @@ MonoBehaviour:
     m_Localized: nothing
     m_Metadata:
       m_Items: []
+  - m_Id: 3247585390940160
+    m_Localized: skeleton
+    m_Metadata:
+      m_Items: []
+  - m_Id: 3247534191071232
+    m_Localized: campfire
+    m_Metadata:
+      m_Items: []
+  - m_Id: 3247490041827328
+    m_Localized: magical tree
+    m_Metadata:
+      m_Items: []
+  - m_Id: 3247424665210880
+    m_Localized: altar
+    m_Metadata:
+      m_Items: []
+  - m_Id: 3247358361653248
+    m_Localized: mountain
+    m_Metadata:
+      m_Items: []
+  - m_Id: 3247274442018816
+    m_Localized: windmill
+    m_Metadata:
+      m_Items: []
+  - m_Id: 3247204229369856
+    m_Localized: lighthouse
+    m_Metadata:
+      m_Items: []
+  - m_Id: 3247134415179776
+    m_Localized: pier
+    m_Metadata:
+      m_Items: []
   references:
     version: 2
     RefIds: []

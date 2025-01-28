@@ -115,6 +115,38 @@ MonoBehaviour:
     m_Key: Nothing
     m_Metadata:
       m_Items: []
+  - m_Id: 3247134415179776
+    m_Key: Pristan
+    m_Metadata:
+      m_Items: []
+  - m_Id: 3247204229369856
+    m_Key: Mayak
+    m_Metadata:
+      m_Items: []
+  - m_Id: 3247274442018816
+    m_Key: Melnitsa
+    m_Metadata:
+      m_Items: []
+  - m_Id: 3247358361653248
+    m_Key: Gora
+    m_Metadata:
+      m_Items: []
+  - m_Id: 3247424665210880
+    m_Key: Altar
+    m_Metadata:
+      m_Items: []
+  - m_Id: 3247490041827328
+    m_Key: MagicTree
+    m_Metadata:
+      m_Items: []
+  - m_Id: 3247534191071232
+    m_Key: Koster
+    m_Metadata:
+      m_Items: []
+  - m_Id: 3247585390940160
+    m_Key: Skelet
+    m_Metadata:
+      m_Items: []
   m_Metadata:
     m_Items: []
   m_KeyGenerator:
