@@ -8,7 +8,7 @@ using UnityEngine.UI;
 
 public class uiController : MonoBehaviour
 {
-    private int _placeNumber = 0;
+    private int _placeNumber;
     
     [SerializeField] private TMP_Text currMusic;
     [SerializeField] private GameObject placePanel;
@@ -22,6 +22,9 @@ public class uiController : MonoBehaviour
     private GameObject[] panels;
     [SerializeField] private SkyChangeMain skCh;
 
+    [SerializeField] private Transform[] places;
+    [SerializeField] private Transform player;
+
     public void ChangeLang(int index)
     {
         LocalizationSettings.SelectedLocale = LocalizationSettings.AvailableLocales.Locales[index];
@@ -30,6 +33,8 @@ public class uiController : MonoBehaviour
     private void Awake()
     {
         panels = new GameObject[] { placePanel, musicPanel, skyPanel, mainPanel, instrPanel, settingsPanel};
+        _placeNumber = PlayerPrefs.GetInt("PlaceNum");
+        ChangePlace(_placeNumber);
     }
 
     public void PanelsChange(GameObject curr)
@@ -44,6 +49,11 @@ public class uiController : MonoBehaviour
     public void ChangePlace(int num)
     {
         _placeNumber = num;
+        if (SceneManager.GetActiveScene().buildIndex == 1)
+        {
+            player.position = places[num].position;
+            player.rotation = places[num].rotation;
+        }
     }
 
     public void Exit()
