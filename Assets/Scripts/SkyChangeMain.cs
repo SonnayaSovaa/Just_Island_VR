@@ -15,6 +15,7 @@ public class SkyChangeMain : MonoBehaviour
 
     [SerializeField] private GameObject[] nightObjects;
     [SerializeField] private Light mainLight;
+    [SerializeField] private AudioControl audio;
 
     private void Awake()
     {
@@ -40,6 +41,7 @@ public class SkyChangeMain : MonoBehaviour
 
             mainLight.colorTemperature = temp[num];
             mainLight.intensity = brightness[num];
+            audio.ChangeBySky(!_night);
         }
     }
     
