@@ -275,6 +275,17 @@ public partial class @Capsule_COntrol: IInputActionCollection2, IDisposable
                     ""action"": ""PauseActivate"",
                     ""isComposite"": false,
                     ""isPartOfComposite"": false
+                },
+                {
+                    ""name"": """",
+                    ""id"": ""1f98459b-f575-4446-b00d-43f10b0eb5b7"",
+                    ""path"": ""<Keyboard>/#(P)"",
+                    ""interactions"": """",
+                    ""processors"": """",
+                    ""groups"": """",
+                    ""action"": ""PauseActivate"",
+                    ""isComposite"": false,
+                    ""isPartOfComposite"": false
                 }
             ]
         }

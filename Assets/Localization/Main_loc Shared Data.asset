@@ -151,6 +151,10 @@ MonoBehaviour:
     m_Key: speed
     m_Metadata:
       m_Items: []
+  - m_Id: 3873414491852800
+    m_Key: MenuSKnopkami
+    m_Metadata:
+      m_Items: []
   m_Metadata:
     m_Items: []
   m_KeyGenerator:

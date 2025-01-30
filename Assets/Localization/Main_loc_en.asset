@@ -158,6 +158,13 @@ MonoBehaviour:
     m_Localized: speed
     m_Metadata:
       m_Items: []
+  - m_Id: 3873414491852800
+    m_Localized: 'a menu with buttons will appear here
+
+
+      (click again to close)'
+    m_Metadata:
+      m_Items: []
   references:
     version: 2
     RefIds: []
