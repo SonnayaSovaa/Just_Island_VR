@@ -17,12 +17,12 @@ public class AudioControl : MonoBehaviour
     private void Awake()
     {
         _num = PlayerPrefs.GetInt("SkyNum");
-        _day = (_num == 5 || _num == 6 || _num == 8);
+        _day = (_num == 0|| _num == 5 ||_num == 6 ||  _num == 7 ||_num == 8);
     }
 
     public void ChangeByLoc(char loc)
     {
-        switch (_currLoc)
+        switch (loc)
         {
             case 'f': //forest
                 if (_currLoc == 'f') break;

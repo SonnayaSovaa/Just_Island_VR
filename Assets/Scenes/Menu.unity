@@ -26,7 +26,7 @@ RenderSettings:
   m_AmbientIntensity: 1.25
   m_AmbientMode: 0
   m_SubtractiveShadowColor: {r: 0.42, g: 0.478, b: 0.627, a: 1}
-  m_SkyboxMaterial: {fileID: 2100000, guid: fe4e130f9947345a2b213cb5038851a2, type: 2}
+  m_SkyboxMaterial: {fileID: 2100000, guid: cdbb40e11399e4a17882ada20a1b896a, type: 2}
   m_HaloStrength: 0.621
   m_FlareStrength: 1
   m_FlareFadeSpeed: 3
@@ -3636,6 +3636,7 @@ MonoBehaviour:
   brightness: []
   nightObjects: []
   mainLight: {fileID: 0}
+  audio: {fileID: 0}
 --- !u!1 &448961542
 GameObject:
   m_ObjectHideFlags: 0
