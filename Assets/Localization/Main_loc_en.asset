@@ -81,7 +81,9 @@ MonoBehaviour:
   - m_Id: 4426523398144
     m_Localized: 'select
 
-      the sky condition'
+      the sky
+
+      condition'
     m_Metadata:
       m_Items: []
   - m_Id: 9875863818240
