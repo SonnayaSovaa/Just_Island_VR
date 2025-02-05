@@ -1,4 +1,5 @@
 using System;
+using System.Collections;
 using TMPro;
 using UnityEngine;
 using UnityEngine.Localization;
@@ -9,7 +10,7 @@ using UnityEngine.UI;
 public class uiController : MonoBehaviour
 {
     private int _placeNumber;
-    
+
     [SerializeField] private TMP_Text currMusic;
     [SerializeField] private GameObject placePanel;
     [SerializeField] private GameObject musicPanel;
@@ -24,35 +25,39 @@ public class uiController : MonoBehaviour
 
     [SerializeField] private Transform[] places;
     [SerializeField] private Transform player;
+    [SerializeField] private Image shade;
 
     public void ChangeLang(int index)
     {
         LocalizationSettings.SelectedLocale = LocalizationSettings.AvailableLocales.Locales[index];
     }
-    
+
     private void Awake()
     {
-        panels = new GameObject[] { placePanel, musicPanel, skyPanel, mainPanel, instrPanel, settingsPanel};
+        panels = new GameObject[] { placePanel, musicPanel, skyPanel, mainPanel, instrPanel, settingsPanel };
         _placeNumber = PlayerPrefs.GetInt("PlaceNum");
-        ChangePlace(_placeNumber);
+        if (SceneManager.GetActiveScene().buildIndex == 1)
+        {
+            player.position = places[_placeNumber].position;
+            player.rotation = places[_placeNumber].rotation;
+        }
     }
 
     public void PanelsChange(GameObject curr)
     {
         foreach (GameObject panel in panels)
         {
-            panel.SetActive(panel==curr);
+            panel.SetActive(panel == curr);
         }
     }
-    
+
 
     public void ChangePlace(int num)
     {
         _placeNumber = num;
         if (SceneManager.GetActiveScene().buildIndex == 1)
         {
-            player.position = places[num].position;
-            player.rotation = places[num].rotation;
+            StartCoroutine(Shading(num));
         }
     }
 
@@ -78,5 +83,25 @@ public class uiController : MonoBehaviour
         PlayerPrefs.SetFloat("Volume", slider.value);
         SceneManager.LoadScene(0);
     }
-    
+
+    IEnumerator Shading(int num)
+    {
+        float a=0;
+        while (a < 1f)
+        {
+            a += 0.03f;
+            shade.color = new Color(0, 0, 0, a);
+            yield return new WaitForSeconds(0.05f);
+        }
+        player.position = places[num].position;
+        player.rotation = places[num].rotation;
+
+        while (a > 0)
+        {
+            a -= 0.03f;
+            shade.color = new Color(0, 0, 0, a);
+            yield return new WaitForSeconds(0.05f);
+        }
+
+    }
 }

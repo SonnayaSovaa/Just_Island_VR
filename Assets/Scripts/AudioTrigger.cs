@@ -9,6 +9,5 @@ public class AudioTrigger : MonoBehaviour
     private void OnTriggerEnter(Collider other)
     {
         audio.ChangeByLoc(location);
-        Debug.Log(location);
     }
 }

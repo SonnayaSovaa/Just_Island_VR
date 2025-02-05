@@ -1499,7 +1499,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: "\u0432\u044B\u0439\u0442\u0438"
+  m_text: exit
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 103ed7b69722e7747a164783c2ad7f22, type: 2}
   m_sharedMaterial: {fileID: 7074542477809753451, guid: 103ed7b69722e7747a164783c2ad7f22, type: 2}
@@ -3484,6 +3484,7 @@ MonoBehaviour:
   skCh: {fileID: 448423779}
   places: []
   player: {fileID: 0}
+  shade: {fileID: 0}
 --- !u!114 &448423773
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -3573,8 +3574,8 @@ RectTransform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 448423771}
-  m_LocalRotation: {x: -0, y: -0.5133829, z: -0, w: -0.8581597}
-  m_LocalPosition: {x: 0, y: 0, z: 233.75269}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 394.06128}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
@@ -3584,11 +3585,11 @@ RectTransform:
   - {fileID: 652706202}
   - {fileID: 1474435144}
   - {fileID: 1476260835}
-  m_Father: {fileID: 0}
-  m_LocalEulerAnglesHint: {x: 0, y: -298.221, z: 0}
+  m_Father: {fileID: 495826357}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 139.80515, y: 0}
+  m_AnchoredPosition: {x: 3.6386414, y: 0}
   m_SizeDelta: {x: 100, y: 100}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &448423778
@@ -4542,6 +4543,39 @@ MonoBehaviour:
             m_StringArgument: 
             m_BoolArgument: 0
           m_CallState: 2
+--- !u!1 &495826356
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 495826357}
+  m_Layer: 0
+  m_Name: GameObject
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &495826357
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 495826356}
+  serializedVersion: 2
+  m_LocalRotation: {x: -0, y: 0.35095376, z: -0, w: 0.93639284}
+  m_LocalPosition: {x: -179.63864, y: 0, z: 62.93872}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children:
+  - {fileID: 1376279889}
+  - {fileID: 448423777}
+  m_Father: {fileID: 0}
+  m_LocalEulerAnglesHint: {x: 0, y: 41.091, z: 0}
 --- !u!1 &527387572
 GameObject:
   m_ObjectHideFlags: 0
@@ -7808,7 +7842,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: "\u043D\u0430\u0447\u0430\u0442\u044C"
+  m_text: start
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 103ed7b69722e7747a164783c2ad7f22, type: 2}
   m_sharedMaterial: {fileID: 7074542477809753451, guid: 103ed7b69722e7747a164783c2ad7f22, type: 2}
@@ -8411,7 +8445,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: "\u043D\u0430\u0441\u0442\u0440\u043E\u0439\u043A\u0438"
+  m_text: settings
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 103ed7b69722e7747a164783c2ad7f22, type: 2}
   m_sharedMaterial: {fileID: 7074542477809753451, guid: 103ed7b69722e7747a164783c2ad7f22, type: 2}
@@ -12335,14 +12369,14 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1376279886}
   serializedVersion: 2
-  m_LocalRotation: {x: -0, y: -0.5133829, z: -0, w: -0.8581597}
-  m_LocalPosition: {x: -179.63864, y: 0, z: 62.93872}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
   - {fileID: 1583119837}
-  m_Father: {fileID: 0}
-  m_LocalEulerAnglesHint: {x: 0, y: -298.221, z: 0}
+  m_Father: {fileID: 495826357}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!82 &1376279890
 AudioSource:
   m_ObjectHideFlags: 0
@@ -18806,7 +18840,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: "\u0443\u043F\u0440\u0430\u0432\u043B\u0435\u043D\u0438\u0435"
+  m_text: control
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 103ed7b69722e7747a164783c2ad7f22, type: 2}
   m_sharedMaterial: {fileID: 7074542477809753451, guid: 103ed7b69722e7747a164783c2ad7f22, type: 2}
@@ -21150,6 +21184,5 @@ SceneRoots:
   m_ObjectHideFlags: 0
   m_Roots:
   - {fileID: 1133588970}
-  - {fileID: 1376279889}
-  - {fileID: 448423777}
+  - {fileID: 495826357}
   - {fileID: 929927385}

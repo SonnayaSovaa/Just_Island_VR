@@ -38,7 +38,7 @@ public class SkyChangeMain : MonoBehaviour
 
         foreach (TMP_Text te in texts)
         {
-            if (num == 1 || num == 2 || num == 3 || num == 4 || num == 9 || _night || num==7) te.color=Color.white;
+            if (num == 1 || num == 2 || num == 3 || num == 4 || num == 9 || num==7) te.color=Color.white;
             else te.color=Color.black;
         }
         

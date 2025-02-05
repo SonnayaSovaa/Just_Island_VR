@@ -96,7 +96,7 @@ Material:
     - Vector1_A9BE6102: 0
     - Vector1_D4AC2961: 21.34
     - Vector1_ED4B4BE7: 7.7
-    - Vector1_EFB520CE: 1
+    - Vector1_EFB520CE: 0.9
     - Vector1_F04E6CC: 2
     - Vector1_F29850D4: 9.01
     - Vector1_F4C40F9C: 20
@@ -133,7 +133,7 @@ Material:
     - Color_A436F4E7: {r: 0.18600924, g: 0.22180378, b: 0.41509432, a: 0.15686275}
     - Color_D1583C05: {r: 0.43867916, g: 1, b: 0.9707381, a: 0}
     - Color_EA23C5B1: {r: 1.877862, g: 1.877862, b: 1.877862, a: 1}
-    - Vector2_F0385D5A: {r: 20, g: 20, b: 0, a: 0}
+    - Vector2_F0385D5A: {r: 18, g: 18, b: 0, a: 0}
     - _BaseColor: {r: 1, g: 1, b: 1, a: 1}
     - _Color: {r: 0.2, g: 0.26, b: 0.34, a: 1}
     - _EmissionColor: {r: 0, g: 0, b: 0, a: 1}
